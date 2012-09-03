@@ -89,7 +89,7 @@ $complaint_options[] = &HTML_QuickForm::createElement('checkbox', '4_of_4_not_mi
 $form->addGroup($complaint_options, 'complaint_confirm', 'By checking the following boxes, I state UNDER PENALTY OF PERJURY that (choose all of the options)', '<br />');
 
 $form->addElement('text', 'signature', 'Typing your full name in this box will act as your digital signature.', array('size' => 25, 'maxlength' => 255));
-$form->addRule('signigature', 'Field is required', 'required', null, 'client');
+$form->addRule('signature', 'Field is required', 'required', null, 'client');
 
 $form->addElement('submit', null, 'Send');
 
